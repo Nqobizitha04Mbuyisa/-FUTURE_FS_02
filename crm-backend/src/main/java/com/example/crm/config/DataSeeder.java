@@ -54,6 +54,8 @@ public class DataSeeder implements CommandLineRunner {
                 .role(Role.ADMIN)
                 .active(true)
                 .build();
+
+                
         userRepository.save(admin);
         log.info("Seeded admin: {}", adminEmail);
     }
