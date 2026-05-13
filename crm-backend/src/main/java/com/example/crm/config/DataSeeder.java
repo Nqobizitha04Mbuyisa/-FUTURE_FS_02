@@ -42,7 +42,7 @@ public class DataSeeder implements CommandLineRunner {
         seedSampleLeads();
     }
 
-    /*private void seedAdmin() {
+    private void seedAdmin() {
         if (userRepository.existsByEmailIgnoreCase(adminEmail)) {
             log.info("Admin user already exists: {}", adminEmail);
             return;
@@ -55,9 +55,9 @@ public class DataSeeder implements CommandLineRunner {
                 .active(true)
                 .build();
         userRepository.save(admin);
-        log.info("Seeded default admin: {} (password from env)", adminEmail);
-    }*/
-   private void seedAdmin() {
+        log.info("Seeded admin: {}", adminEmail);
+    }
+   /*private void seedAdmin() {
 
     userRepository.findByEmailIgnoreCase(adminEmail)
             .ifPresent(userRepository::delete);
@@ -73,7 +73,7 @@ public class DataSeeder implements CommandLineRunner {
     userRepository.save(admin);
 
     log.info("Fresh admin user seeded: {}", adminEmail);
-}
+}*/
 
     private void seedSampleLeads() {
         if (leadRepository.count() > 0) return;
