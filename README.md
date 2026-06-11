@@ -1,173 +1,94 @@
-# Mini CRM — Full Stack Lead Management System
+# Mini CRM - Full Stack Lead Management System
 
-## Overview
+Mini CRM is a full-stack web application that helps businesses capture, manage, and track customer leads throughout the sales process.
 
-Mini CRM is a production-ready full-stack lead management platform designed to help businesses capture, organize, and manage customer leads efficiently.
+I built this project to gain hands-on experience developing and deploying a complete business application using Java Spring Boot, React, PostgreSQL, and JWT authentication. The project allowed me to work through real-world challenges such as authentication, API integration, database management, cloud deployment, and production debugging.
 
-The application was built using a modern full-stack architecture with a React frontend, Spring Boot backend, PostgreSQL database integration, JWT authentication, and cloud deployment.
+## Live Demo
 
-This project demonstrates practical software engineering skills including:
+### Frontend
 
-* Full-stack application development
-* REST API design
-* JWT authentication & authorization
-* PostgreSQL database integration
-* Cloud deployment
-* Production debugging
-* Environment variable management
-* Frontend/backend integration
-* Secure API communication
+[Fronted web page](https://future-fs-02-hh8h.onrender.com)
 
----
+### Backend API
 
-# Live Demo
+[Backend API](https://mini-crm-backend-cr6q.onrender.com)
 
-## Frontend
+## Features
 
-[https://future-fs-02-hh8h.onrender.com](https://future-fs-02-hh8h.onrender.com)
+### Authentication & Security
 
-## Backend API
+* User login with JWT authentication
+* Secure password encryption using BCrypt
+* Protected application routes
+* Role-based access control
+* Session persistence
 
-[https://mini-crm-backend-cr6q.onrender.com](https://mini-crm-backend-cr6q.onrender.com)
+### Lead Management
 
----
-
-# Features
-
-## Authentication & Security
-
-* JWT Authentication
-* Secure password hashing using BCrypt
-* Protected routes
-* Role-based authorization
-* Persistent login sessions
-* Automatic logout on unauthorized access
-
-## Lead Management
-
-* Create leads
-* View all leads
-* Update lead information
-* Delete leads
-* Search and filter leads
-* Update lead statuses
+* Create, view, update, and delete leads
+* Search and filter lead records
+* Track lead status changes
 * Add notes to leads
+* Organize leads through different stages of the sales pipeline
 
-## Public Lead Capture
+### Public Lead Capture
 
 * Public contact form
-* Automatic lead generation from inquiries
+* Automatic lead creation from customer inquiries
 * Lead source tracking
 
-## Dashboard
+### Dashboard
 
-* Dashboard statistics
-* Lead pipeline tracking
-* Status-based organization
+* Lead statistics overview
+* Pipeline visibility
+* Status-based lead tracking
 
-## Deployment & Infrastructure
+## Technologies Used
 
-* Frontend deployed on Render
-* Backend deployed on Render
-* PostgreSQL database hosted on Neon
-* Environment variable configuration
-* Production-ready REST API
-
----
-
-# Tech Stack
-
-## Frontend
+### Frontend
 
 * React
 * Vite
-* Axios
 * React Router
+* Axios
 * Tailwind CSS
 
-## Backend
+### Backend
 
-* Java
+* Java 17
 * Spring Boot
 * Spring Security
 * JWT Authentication
-* Hibernate / JPA
+* Spring Data JPA
+* Hibernate
 * Maven
 
-## Database
+### Database
 
 * PostgreSQL
 * Neon Database
 
-## Deployment
+### Deployment
 
-* Render (Frontend & Backend)
+* Render
 * GitHub
 
----
+## Application Architecture
 
-# System Architecture
-
-Frontend (React + Vite)
-↓
-REST API (Spring Boot)
-↓
-PostgreSQL Database (Neon)
-
----
-
-# API Endpoints
-
-## Authentication
-
-* POST /api/auth/login
-* GET /api/auth/me
-
-## Leads
-
-* GET /api/leads
-* POST /api/leads
-* PUT /api/leads/{id}
-* DELETE /api/leads/{id}
-* PUT /api/leads/{id}/status
-* POST /api/leads/{id}/notes
-
-## Public
-
-* POST /api/public/leads
-
----
-
-# Environment Variables
-
-## Frontend (.env)
-
-```env
-VITE_API_BASE_URL=https://mini-crm-backend-cr6q.onrender.com/api
+```text
+React Frontend
+      │
+      ▼
+Spring Boot REST API
+      │
+      ▼
+PostgreSQL Database
 ```
 
-## Backend
+## Running Locally
 
-```env
-SPRING_DATASOURCE_URL=your_database_url
-SPRING_DATASOURCE_USERNAME=your_username
-SPRING_DATASOURCE_PASSWORD=your_password
-JWT_SECRET=your_secret
-APP_CORS_ALLOWED_ORIGINS=https://future-fs-02-hh8h.onrender.com
-```
-
----
-
-# Local Installation
-
-## Clone Repository
-
-```bash
-git clone <repository-url>
-cd mini-crm
-```
-
-## Frontend Setup
+### Frontend
 
 ```bash
 cd frontend
@@ -175,66 +96,55 @@ npm install
 npm run dev
 ```
 
-## Backend Setup
+### Backend
 
 ```bash
 cd backend
 mvn spring-boot:run
 ```
 
----
+## Challenges Solved
 
-# Production Challenges Solved
+While building and deploying this application, I worked through several common software engineering challenges, including:
 
-This project involved solving several real-world production deployment challenges including:
-
-* CORS configuration issues
-* JWT authentication integration
-* Frontend/backend API routing mismatches
-* Environment variable configuration
-* SPA routing issues on Render
-* PostgreSQL cloud database integration
-* API deployment debugging
+* JWT authentication implementation
+* CORS configuration
+* Frontend and backend integration
+* PostgreSQL cloud database connectivity
+* Environment variable management
+* API deployment on Render
 * Protected route handling
-* Persistent authentication sessions
+* Authentication persistence
+* Debugging production deployment issues
 
----
+## What I Learned
 
-# What I Learned
+This project strengthened my understanding of:
 
-Through building this project, I strengthened my understanding of:
-
-* Full-stack software engineering
-* Backend API architecture
-* Authentication systems
-* Database integration
+* Full-stack application development
+* REST API design and development
+* Spring Boot backend architecture
+* Authentication and authorization
+* Database integration with PostgreSQL
 * Cloud deployment workflows
-* Production debugging techniques
-* Frontend/backend communication
-* Secure application design
+* Debugging and troubleshooting production issues
+* Secure application development practices
 
----
-
-
-# Future Improvements
+## Future Improvements
 
 * Email notifications
-* Analytics dashboard
-* User management
-* Pagination improvements
-* Advanced filtering
-* Activity logs
-* Docker support
-* CI/CD pipeline
-* Unit and integration testing
+* Advanced analytics dashboard
+* User management features
+* Activity tracking and audit logs
+* Docker containerization
+* Automated testing
+* CI/CD pipeline integration
 
----
+## Author
 
-# Author
+**Nqobizitha Mbuyisa**
 
-Nqobizitha Mbuyisa
+Computer Science & Information Technology Graduate
 
-Computer Science & IT Graduate
-Full-Stack & Software Engineering Enthusiast
-
+Aspiring Java Software Engineer with an interest in backend development, enterprise applications, and full-stack software engineering.
 
